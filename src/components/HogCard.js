@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class HogCard extends Component {
 
   // getImgUrl = name => {
-  //   let url = name.split(' ').join('_').toLowerCase();
+  //   let url = name.split(' ').join('_').toLowerCase(); <- better variable name would be "slug", by the way
   //   console.log(url);
   //   console.log('../hog-imgs/' + url + '.jpg');
   //   return `../hog-imgs/${url}.jpg`
@@ -21,7 +21,7 @@ export default class HogCard extends Component {
 
   displayHogDetails = () => {
     // console.log(this.state.clicked);
-    const { weight, specialty, greased, 'highest medal achieved': highestMedalAchieved } = this.props.hog
+    const { weight, specialty, greased, 'highest medal achieved': highestMedalAchieved } = this.props.hog 
     if (this.state.clicked) {
       return (
         <ul>
